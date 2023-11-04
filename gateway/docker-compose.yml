@@ -31,7 +31,6 @@ services:
     depends_on:
       - lnd
     restart: always
-    platform: linux/amd64
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
@@ -47,4 +46,3 @@ services:
     depends_on:
       - gatewayd
     restart: always
-    platform: linux/amd64
