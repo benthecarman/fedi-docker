@@ -17,7 +17,7 @@ services:
       # Configured gateway routing fees Format: <base_msat>,<proportional_millionths>
       - FM_GATEWAY_FEES=1000,0
       # LND RPC address
-      - FM_LND_RPC_ADDR=https://host.docker.internal:10009
+      - FM_LND_RPC_ADDR=https://172.17.0.1:10009
       # LND TLS cert file path
       - FM_LND_TLS_CERT=/lnd_data/tls.cert
       # LND macaroon file path
@@ -29,8 +29,6 @@ services:
       - "8175:8175"
       - "8176:8080"
     restart: always
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
 
   gateway-ui:
     image: fedimintui/gateway-ui:0.1
