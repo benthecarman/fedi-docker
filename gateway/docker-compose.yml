@@ -28,8 +28,6 @@ services:
     ports:
       - "8175:8175"
       - "8176:8080"
-    depends_on:
-      - lnd
     restart: always
     extra_hosts:
       - "host.docker.internal:host-gateway"
