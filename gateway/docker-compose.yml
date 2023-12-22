@@ -24,7 +24,7 @@ services:
       # LND macaroon file path
       - FM_LND_MACAROON=/lnd_data/data/chain/bitcoin/mainnet/admin.macaroon
     volumes:
-      - ~/.fedi/gateway:/gateway_data
+      - ~/.fedimint/gateway:/gateway_data
       - ~/.lnd:/lnd_data:ro
     ports:
       - "8175:8175"

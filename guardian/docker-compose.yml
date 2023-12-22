@@ -5,7 +5,7 @@ services:
   fedimintd:
     image: fedimint/fedimintd:v0.2.1-rc2
     volumes:
-      - ~/.fedi/data:/data
+      - ~/.fedimint/data:/data
     ports:
       - "8173:8173"
       - "8174:8174"
