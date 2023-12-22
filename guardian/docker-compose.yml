@@ -3,7 +3,7 @@ version: "3"
 
 services:
   fedimintd:
-    image: fedimint/fedimintd:v0.1.3
+    image: fedimint/fedimintd:v0.2.1-rc2
     volumes:
       - ~/.fedi/data:/data
     ports:
@@ -22,7 +22,7 @@ services:
     restart: always
 
   guardian-ui:
-    image: fedimintui/guardian-ui:0.1
+    image: fedimintui/guardian-ui:0.2.0
     ports:
       - "8172:8172"
     environment:
